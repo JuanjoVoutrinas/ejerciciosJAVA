@@ -29,28 +29,28 @@ public class A12 {
 		
 		
 			case 1, 3, 5, 7, 8, 10, 12:
-			if (dia < 0 && dia >31) {
-				System.out.println("No existe el día");
+			if (dia > 0 && dia < 31) {
+				System.out.println("Existe el día de este mes");
 			} else {
-				System.out.println("Existe el día del mes");
+				System.out.println("No existe el día de este mes");
 			}
 			
 			break;
 			
 			case 2:
-			if (dia < 0 && dia > 28) {
-				System.out.println("No existe el día");
+			if (dia > 0 && dia < 28) {
+				System.out.println("Existe el dia");
 			} else {
-				System.out.println("Existe el día del mes");
+				System.out.println("No existe el dia de este mes");
 			}
 				
 			break;
 			
 			case 4, 6, 9 ,11:
-			if (dia < 0 && dia > 30) {
-				System.out.println("No existe el día");
+			if (dia > 0 && dia < 30) {
+				System.out.println("Exisxte el día");
 			} else {
-				System.out.println("Existe el día del mes");
+				System.out.println("No existe el día del mes");
 			}
 			
 			break;
