@@ -48,7 +48,7 @@ public class A12 {
 			
 			case 4, 6, 9 ,11:
 			if (dia > 0 && dia < 30) {
-				System.out.println("Exisxte el día");
+				System.out.println("Existe el día");
 			} else {
 				System.out.println("No existe el día del mes");
 			}
@@ -57,10 +57,10 @@ public class A12 {
 				
 		}
 		
-		if (mes < 0 && mes > 12) {
-			System.out.println("No existe el mes");
-		} else {
+		if (mes > 0 && mes < 12) {
 			System.out.println("Existe el mes");
+		} else {
+			System.out.println("No existe el mes");
 		}
 		 
 		
