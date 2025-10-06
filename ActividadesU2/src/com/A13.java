@@ -25,13 +25,16 @@ public class A13 {
 		
 		} else {
 		seg++;
-		 if (seg == 60) {
+		
+		if (seg == 60) {
 			min++;
 			seg = 0;
+			
 			if (min == 60) {
 				hora++;
 				min = 0;
 				seg = 0;
+				
 				if (hora == 24) {
 					hora = 0;
 					min = 0;
@@ -39,7 +42,9 @@ public class A13 {
 				}
 			}
 		}
-		}	System.out.println("La hora dentro de un segundo es: " + hora + ":" + min + ":" + seg);
+		 System.out.println("La hora dentro de un segundo es: " + hora + ":" + min + ":" + seg);
+		}
+		
 		
 		
 		
