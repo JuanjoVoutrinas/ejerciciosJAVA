@@ -11,7 +11,7 @@ public class A3 {
 		num = (int) (Math.random() * 100) +1;
 		
 		intento = sc.nextInt();
-		while (intento > 0 && intento != num) {
+		while (intento >= 0 && intento != num) {
 			
 		
 			if (intento < num) {
