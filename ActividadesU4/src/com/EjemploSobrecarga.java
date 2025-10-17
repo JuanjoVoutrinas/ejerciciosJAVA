@@ -26,7 +26,7 @@ public class EjemploSobrecarga {
 	}
 	
 	public static void mostrar (String texto, int veces) {
-		for ()
+	
 	}
 	
 	
