@@ -9,9 +9,9 @@ public class A9 {
 		System.out.println("Escribe un número y te diré sus divisores primos");
 		int num = sc.nextInt();
 		
-		System.out.println(divPrimos (num));
+		divPrimos (num);
 	}
-		public static int divPrimos (int num) {
+		public static void divPrimos (int num) {
 			boolean primo;
 			int cantidad = 0;
 			for (int i = 2; i < num; i++) {
@@ -26,9 +26,9 @@ public class A9 {
 				
 				if (primo && num % i == 0) {
 					System.out.println(i);
-					cantidad++;
+					
 				}
 			}
-			return cantidad;
+			
 		}
 }
