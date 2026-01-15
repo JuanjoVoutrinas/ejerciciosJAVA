@@ -1,4 +1,4 @@
-package com;
+package com.banco;
 
 public class Perfil {
 

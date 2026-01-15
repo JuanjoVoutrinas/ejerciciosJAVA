@@ -1,4 +1,4 @@
-package com;
+package com.banco;
 
 import java.util.Scanner;
 
@@ -6,7 +6,13 @@ public class Main {
 	static Scanner sc = new Scanner (System.in);
 	public static void main(String[] args) {
 		//Soy medio subnormal, podría haber reducido todo este bloque poniéndolo en la clase CuentaCorriente
-		CuentaCorriente pedro = new CuentaCorriente(5000, "Pedro", "77982547L", -50);
+		Banco BBVA = new Banco("BBVA", 7400000, "Av Los Trabajadores Nº14");
+		Banco Santander = new Banco("Santander", "C Perro Muerto Nº2");
+		
+		
+		
+		
+		CuentaCorriente pedro = new CuentaCorriente(5000, "Pedro", "77982547L", -50, BBVA);
 		pedro.mostrarInfo();
 		System.out.println("\n ¿Desea ingresar dinero? \n[1] Sí \n[2] No");
 		int opcion = sc.nextInt();
@@ -22,10 +28,10 @@ public class Main {
 			System.out.println("¿Cuanto?");
 			float cantidad = sc.nextInt();
 			pedro.sacarDinero(cantidad);
-			pedro.cambioNombreBanco();
+			
 		}
 	
-		CuentaCorriente alba = new CuentaCorriente(70000);
+		 CuentaCorriente alba = new CuentaCorriente(70000, Santander);
 			alba.mostrarInfo();
 			System.out.println("\n ¿Desea ingresar dinero? \n[1] Sí \n[2] No");
 			opcion = sc.nextInt();
@@ -41,6 +47,7 @@ public class Main {
 				System.out.println("¿Cuanto?");
 				float cantidad = sc.nextInt();
 				alba.sacarDinero(cantidad);
+				
 			}
 	
 		CuentaCorriente juanjo = new CuentaCorriente(4000, "87453761L", 50);
@@ -61,6 +68,16 @@ public class Main {
 				float cantidad = sc.nextInt();
 				juanjo.sacarDinero(cantidad);
 			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			
