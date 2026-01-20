@@ -348,7 +348,12 @@ class TextoTest {
         assertEquals(contenidoEsperadoTrasFallo, contenidoTrasFallo, "No debe cambiar el contenido si no hay espacio");
     }
 
-    @Test
+    private void assertTrue(Object anadirFinal, String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Test
     @DisplayName("toString(): devuelve el contenido")
     void toString_devuelveContenido() {
         Texto t = new Texto("Hola", 10);
